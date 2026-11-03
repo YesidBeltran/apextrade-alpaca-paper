@@ -1,15 +1,15 @@
 {
-  "name": "apextrade-alpaca-paper",
+  "name": "apextrade-app",
   "version": "1.0.0",
-  "description": "ApexTrade Paper Trading Web App conectada a Alpaca Markets API",
+  "description": "ApexTrade - Trading App con Alpaca Markets",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5"
   },
   "engines": {
     "node": ">=18.0.0"
