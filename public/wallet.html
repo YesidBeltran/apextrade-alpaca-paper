@@ -1,1 +1,410 @@
+<!DOCTYPE html>
 
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131c;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#dfe2ef", "secondary-container": "#03b5d3", "tertiary-fixed-dim": "#ffb3ad", "on-tertiary-container": "#b71823", "on-secondary-fixed": "#001f26", "tertiary-fixed": "#ffdad7", "surface": "#0f131c", "secondary-fixed": "#acedff", "surface-container-highest": "#31353f", "on-primary-fixed": "#002111", "on-secondary-fixed-variant": "#004e5c", "on-primary-fixed-variant": "#005231", "on-tertiary": "#68000a", "primary-container": "#00f59b", "outline": "#849588", "surface-bright": "#353943", "on-primary": "#003920", "on-error": "#690005", "inverse-primary": "#006d42", "tertiary-container": "#ffcac6", "primary-fixed": "#53ffab", "secondary": "#4cd7f6", "surface-tint": "#00e38f", "on-tertiary-fixed": "#410004", "error": "#ffb4ab", "surface-dim": "#0f131c", "on-background": "#dfe2ef", "surface-container-low": "#181b25", "on-secondary": "#003640", "surface-container-high": "#262a34", "on-surface-variant": "#b9cbbd", "primary": "#cdffdc", "tertiary": "#fff0ee", "primary-fixed-dim": "#00e38f", "surface-container-lowest": "#0a0e17", "inverse-on-surface": "#2c303a", "inverse-surface": "#dfe2ef", "surface-container": "#1c1f29", "error-container": "#93000a", "on-error-container": "#ffdad6", "background": "#0f131c", "surface-variant": "#31353f", "on-primary-container": "#006b41", "on-secondary-container": "#00424e", "secondary-fixed-dim": "#4cd7f6", "on-tertiary-fixed-variant": "#930013", "outline-variant": "#3b4a3f" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "space-md": "0.75rem", "margin": "1rem", "gutter": "0.75rem", "space-2xs": "0.125rem", "space-lg": "1rem" }, "fontFamily": { "label-numeric-md": ["JetBrains Mono"], "body-md": ["Geist"], "body-lg": ["Geist"], "headline-lg": ["Space Grotesk"], "headline-xl": ["Space Grotesk"], "body-sm": ["Geist"], "headline-xl-mobile": ["Space Grotesk"], "label-numeric-lg": ["JetBrains Mono"], "headline-md": ["Space Grotesk"], "label-numeric-sm": ["JetBrains Mono"], "label-caps": ["Space Grotesk"] }, "fontSize": { "label-numeric-md": ["14px", { "lineHeight": "18px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "30px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }], "label-numeric-lg": ["20px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "label-numeric-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "label-caps": ["10px", { "lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.35)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="ApexTrade Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WTfyjtJ8mLnT4XkNRXKmlUQnibnBZaYdO8y3WtwD6kLjOX9mD4NRO9sG-y0cOPPnSfR98HVwWHVbGiqZG_HSJzgd08Ei6vlnHOYKOVh9frrsX_vV0Utr7rgLT89jn4ISizWVQ13DYunj9uUHTWXwXMlGUq3CrUFD--0vHcD-vCg_59_7Wh81TBopyi-ivdH-CU1HdNsGvM-y9iCSahY0b2V3VSBaDADoLEVUFp9chjGQ"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md tracking-tight text-on-surface">ApexTrade</span><span class="text-on-surface-variant font-body-sm text-body-sm hidden xs:inline">• Dashboard</span></div><div class="flex items-center gap-space-2xs"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span></span><span class="font-label-caps text-label-caps uppercase text-primary-fixed-dim">Arbitrum One</span><span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">24ms</span></div></div></div><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex flex-col items-end px-space-sm py-space-2xs rounded bg-surface-container-low"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Balance</span><span class="font-label-numeric-md text-label-numeric-md text-primary-container">$84,291.50</span></div><button aria-label="User Profile" class="flex items-center justify-center p-space-2xs min-h-[44px] min-w-[44px] rounded-full focus:outline-none focus:ring-1 focus:ring-secondary"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWbb6t6jZ7MO9s8pZn4mnoHu3VjylyH26t1hqSK0-nEJ6aCTkif5yIn363RZpl47Ph9eHA5VGTguSPy8zwa4C_sfSCOBA2BrH1e_yMhq7mlX9Xk5_dDMvXXvJT0SMnmK34Xn1DDEOYEq_LndLpKjQPuWZn6JFyFmp2JORPlpOAVgM6SsIorQmoR74mEBBFDjGDZ7hQzVkwlIhAP859Ituarq28o6Fwolz4mgb7NIBx"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface flex-grow min-h-screen"><div class="flex flex-col w-full px-margin pb-space-xl space-y-space-md">
+<!-- Top Segmented Control & P2P On-Ramp -->
+<div class="flex flex-col space-y-space-xs mt-space-2xs">
+<div class="bg-surface-container-lowest p-space-2xs rounded-full flex items-center shadow-inner">
+<button class="flex-1 py-space-xs rounded-full bg-surface-container-high text-primary-container font-headline-md text-[13px] tracking-wide flex items-center justify-center gap-space-xs transition-all duration-200 shadow-md" id="btn-deposit-tab">
+<span class="material-symbols-outlined text-[16px]">south_west</span>
+<span>Depositar Cripto</span>
+</button>
+<button class="flex-1 py-space-xs rounded-full text-on-surface-variant hover:text-on-surface font-headline-md text-[13px] tracking-wide flex items-center justify-center gap-space-xs transition-all duration-200" id="btn-withdraw-tab">
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+<span>Retirar Fondos</span>
+</button>
+</div>
+<!-- Fiat / P2P Quick Access Pill -->
+<button class="w-full bg-surface-container-low hover:bg-surface-container-high text-secondary flex items-center justify-between px-space-md py-space-xs rounded-lg transition-colors group">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">payments</span>
+<span class="font-body-sm text-body-sm text-on-surface">Comprar Cripto con Fiat / P2P</span>
+</div>
+<div class="flex items-center gap-space-2xs text-on-surface-variant group-hover:text-secondary transition-colors">
+<span class="font-label-caps text-label-caps uppercase text-secondary">0% Fee Promo</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</button>
+</div>
+<!-- Asset & Network Selector Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md space-y-space-sm shadow-md">
+<!-- Asset Selector Row -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="font-label-numeric-md text-label-numeric-md font-bold text-primary-container">₮</span>
+<span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-primary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[9px] text-on-primary font-bold">check</span>
+</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Activo a Depositar</span>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">USDT</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tether USD</span>
+</div>
+</div>
+</div>
+<button class="bg-surface-container-high px-space-sm py-space-2xs rounded text-on-surface flex items-center gap-space-2xs hover:bg-surface-bright transition-colors">
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface">Cambiar</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span>
+</button>
+</div>
+<!-- Active Network Badge & Dropdown Header -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Red de Destino</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-primary-fixed-dim bg-primary-container/10 px-space-xs py-0.5 rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+          L2 • Fee ~$0.05
+        </span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">hub</span>
+<span class="font-headline-md text-[15px] text-on-surface">Arbitrum One</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Quick Network Switch Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none">
+<button class="bg-primary-container/15 text-primary-container font-label-numeric-sm text-label-numeric-sm px-space-sm py-1 rounded whitespace-nowrap shadow-[0_0_8px_rgba(0,245,155,0.2)]">
+        Arbitrum One
+      </button>
+<button class="bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-numeric-sm text-label-numeric-sm px-space-sm py-1 rounded whitespace-nowrap transition-colors">
+        TRC20 (Tron)
+      </button>
+<button class="bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-numeric-sm text-label-numeric-sm px-space-sm py-1 rounded whitespace-nowrap transition-colors">
+        ERC20 (Ethereum)
+      </button>
+<button class="bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-numeric-sm text-label-numeric-sm px-space-sm py-1 rounded whitespace-nowrap transition-colors">
+        Polygon
+      </button>
+</div>
+</div>
+<!-- Deposit QR Card (Obsidian HUD Focal Point) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col items-center text-center shadow-lg relative overflow-hidden">
+<!-- Ambient Neon Bloom Glow -->
+<div class="absolute -top-16 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-center justify-between w-full mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">qr_code_scanner</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Escanear para Depositar</span>
+</div>
+<div class="flex items-center gap-space-2xs text-on-surface-variant">
+<span class="font-label-numeric-sm text-label-numeric-sm">USDT (ARB)</span>
+</div>
+</div>
+<!-- High-Contrast Stylized QR Core -->
+<div class="relative bg-surface-container-lowest p-3.5 rounded-xl shadow-2xl flex items-center justify-center">
+<!-- Outer HUD Corner Accents -->
+<div class="absolute top-1 left-1 w-2.5 h-2.5 bg-primary-container rounded-sm opacity-80"></div>
+<div class="absolute top-1 right-1 w-2.5 h-2.5 bg-primary-container rounded-sm opacity-80"></div>
+<div class="absolute bottom-1 left-1 w-2.5 h-2.5 bg-primary-container rounded-sm opacity-80"></div>
+<div class="absolute bottom-1 right-1 w-2.5 h-2.5 bg-primary-container rounded-sm opacity-80"></div>
+<!-- QR Vector Representation -->
+<svg class="w-44 h-44 text-on-surface" fill="currentColor" viewbox="0 0 140 140">
+<!-- Top Left Locator -->
+<rect fill="#00f59b" height="35" rx="3" width="35" x="10" y="10"></rect>
+<rect fill="#0a0e17" height="21" rx="2" width="21" x="17" y="17"></rect>
+<rect fill="#00f59b" height="9" width="9" x="23" y="23"></rect>
+<!-- Top Right Locator -->
+<rect fill="#00f59b" height="35" rx="3" width="35" x="95" y="10"></rect>
+<rect fill="#0a0e17" height="21" rx="2" width="21" x="102" y="17"></rect>
+<rect fill="#00f59b" height="9" width="9" x="108" y="23"></rect>
+<!-- Bottom Left Locator -->
+<rect fill="#00f59b" height="35" rx="3" width="35" x="10" y="95"></rect>
+<rect fill="#0a0e17" height="21" rx="2" width="21" x="17" y="102"></rect>
+<rect fill="#00f59b" height="9" width="9" x="23" y="108"></rect>
+<!-- Dense HUD Data Pattern Nodes -->
+<rect fill="#cdffdc" height="6" width="6" x="52" y="12"></rect>
+<rect fill="#cdffdc" height="6" width="6" x="64" y="12"></rect>
+<rect fill="#cdffdc" height="6" width="10" x="76" y="12"></rect>
+<rect fill="#4cd7f6" height="6" width="14" x="52" y="24"></rect>
+<rect fill="#cdffdc" height="6" width="8" x="72" y="24"></rect>
+<rect fill="#cdffdc" height="12" width="6" x="58" y="36"></rect>
+<rect fill="#00f59b" height="6" width="14" x="70" y="36"></rect>
+<rect fill="#cdffdc" height="6" width="8" x="14" y="52"></rect>
+<rect fill="#00f59b" height="6" width="12" x="28" y="52"></rect>
+<rect fill="#cdffdc" height="12" width="6" x="14" y="64"></rect>
+<rect fill="#4cd7f6" height="6" width="14" x="26" y="70"></rect>
+<rect fill="#cdffdc" height="6" width="14" x="96" y="52"></rect>
+<rect fill="#00f59b" height="10" width="8" x="116" y="52"></rect>
+<rect fill="#cdffdc" height="14" width="6" x="102" y="66"></rect>
+<rect fill="#cdffdc" height="6" width="10" x="114" y="70"></rect>
+<!-- Bottom Clusters -->
+<rect fill="#cdffdc" height="6" width="10" x="52" y="96"></rect>
+<rect fill="#4cd7f6" height="6" width="16" x="68" y="96"></rect>
+<rect fill="#00f59b" height="14" width="6" x="52" y="108"></rect>
+<rect fill="#cdffdc" height="6" width="14" x="64" y="114"></rect>
+<rect fill="#cdffdc" height="14" width="6" x="84" y="106"></rect>
+<rect fill="#cdffdc" height="6" width="8" x="96" y="96"></rect>
+<rect fill="#00f59b" height="6" width="14" x="110" y="96"></rect>
+<rect fill="#cdffdc" height="6" width="16" x="96" y="110"></rect>
+<rect fill="#4cd7f6" height="8" width="8" x="118" y="120"></rect>
+<!-- Center Logo Pocket -->
+<rect fill="#0a0e17" height="32" rx="6" width="32" x="54" y="54"></rect>
+</svg>
+<!-- Center Tether Emblem -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg font-headline-md font-bold text-sm">
+          ₮
+        </div>
+</div>
+</div>
+<!-- Deposit Address Box with Quick Actions -->
+<div class="w-full mt-space-md bg-surface-container-lowest rounded-lg p-space-sm flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Dirección de Billetera Arbitrum</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary">EVM Compatible</span>
+</div>
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-numeric-md text-[13px] text-on-surface tracking-wider truncate" id="wallet-address">
+          0x71C9482F8E1d41872195f269a9e3A28F5c42B49A
+        </span>
+<button class="p-space-2xs bg-surface-container-high hover:bg-surface-bright rounded text-primary-container transition-transform active:scale-95 shrink-0" id="btn-copy-address" title="Copiar Dirección">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Action Buttons Row -->
+<div class="grid grid-cols-2 gap-space-xs w-full mt-space-sm">
+<button class="bg-primary-container text-on-primary font-headline-md text-[13px] py-space-xs px-space-sm rounded-lg flex items-center justify-center gap-space-2xs active:scale-[0.98] transition-transform shadow-[0_0_12px_rgba(0,245,155,0.25)]" id="btn-copy-direct">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copiar Dirección</span>
+</button>
+<button class="bg-surface-container-high hover:bg-surface-bright text-on-surface font-headline-md text-[13px] py-space-xs px-space-sm rounded-lg flex items-center justify-center gap-space-2xs transition-colors" id="btn-share-qr">
+<span class="material-symbols-outlined text-[16px] text-secondary">share</span>
+<span>Compartir QR</span>
+</button>
+</div>
+<!-- Security HUD Banner -->
+<div class="mt-space-md w-full bg-surface-container-high/40 rounded-lg p-space-sm flex items-start gap-space-xs text-left">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col space-y-0.5">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Verificación y Seguridad</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-snug">
+          Envía únicamente <strong class="text-on-surface">USDT</strong> mediante la red <strong class="text-primary-container">Arbitrum One</strong>. Depósito mínimo <strong class="text-on-surface">10 USDT</strong>. Los fondos se acreditarán automáticamente tras <strong class="text-on-surface">12 confirmaciones</strong> de bloque (~1.5 min).
+        </p>
+</div>
+</div>
+</div>
+<!-- Express Profit Withdrawal Section -->
+<div class="bg-surface-container-low rounded-xl p-space-md space-y-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">bolt</span>
+<span class="font-headline-md text-[15px] text-on-surface">Retiro Rápido de Utilidades</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase bg-secondary-container/20 text-secondary px-space-xs py-0.5 rounded">0% Fee Spot</span>
+</div>
+<!-- Available Balance Metric Pill -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Balance Retirable Disponible</span>
+<span class="font-label-numeric-lg text-label-numeric-lg text-primary-container font-semibold">$11,840.50 <span class="font-body-sm text-[12px] text-on-surface-variant font-normal">USDT</span></span>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-numeric-sm text-label-numeric-sm px-space-sm py-space-xs rounded transition-colors">
+        MAX
+      </button>
+</div>
+<!-- Quick Whitelisted Wallets (Express Payouts) -->
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Destinos Guardados (1-Clic)</span>
+<!-- Option 1: Arbitrum MetaMask -->
+<div class="bg-surface-container-lowest hover:bg-surface-container-highest/60 p-space-sm rounded-lg flex items-center justify-between transition-colors cursor-pointer group">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[16px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-[13px] text-on-surface group-hover:text-primary-container transition-colors">MetaMask (Arbitrum Vault)</span>
+<span class="font-label-numeric-sm text-[11px] text-on-surface-variant">0x3E18...892B</span>
+</div>
+</div>
+<button class="bg-surface-container-high group-hover:bg-primary-container group-hover:text-on-primary text-primary-container font-label-caps text-label-caps uppercase px-space-sm py-1 rounded transition-colors flex items-center gap-1">
+<span>Retirar</span>
+<span class="material-symbols-outlined text-[12px]">send</span>
+</button>
+</div>
+<!-- Option 2: Binance Pay Instant -->
+<div class="bg-surface-container-lowest hover:bg-surface-container-highest/60 p-space-sm rounded-lg flex items-center justify-between transition-colors cursor-pointer group">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-[13px] text-on-surface group-hover:text-primary-container transition-colors">Binance Pay (Cajero ID)</span>
+<span class="font-label-numeric-sm text-[11px] text-on-surface-variant">ID: 84920194</span>
+</div>
+</div>
+<button class="bg-surface-container-high group-hover:bg-primary-container group-hover:text-on-primary text-primary-container font-label-caps text-label-caps uppercase px-space-sm py-1 rounded transition-colors flex items-center gap-1">
+<span>Retirar</span>
+<span class="material-symbols-outlined text-[12px]">send</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Recent Transfers & Depósitos Ledger -->
+<div class="bg-surface-container-low rounded-xl p-space-md space-y-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">receipt_long</span>
+<span class="font-headline-md text-[15px] text-on-surface">Historial Reciente</span>
+</div>
+<a class="font-label-caps text-label-caps uppercase text-secondary hover:text-secondary-fixed transition-colors flex items-center gap-0.5" href="#">
+<span>Ver Todo</span>
+<span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</div>
+<!-- Transaction Ledger List -->
+<div class="space-y-space-xs divide-y-0">
+<!-- Item 1: Confirmed Deposit -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-[13px] text-on-surface">Depósito USDT</span>
+<span class="font-label-caps text-[9px] bg-primary-container/15 text-primary-container px-1 rounded uppercase">Confirmado</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Hoy, 14:28 • Arbitrum</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-numeric-md text-label-numeric-md text-primary-container font-semibold">+2,500.00</span>
+<a class="font-label-numeric-sm text-[10px] text-secondary hover:underline flex items-center gap-0.5" href="https://arbiscan.io" rel="noopener noreferrer" target="_blank">
+<span>Tx: 0x9f...a41</span>
+<span class="material-symbols-outlined text-[10px]">launch</span>
+</a>
+</div>
+</div>
+<!-- Item 2: Confirmed Deposit -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-[13px] text-on-surface">Depósito USDT</span>
+<span class="font-label-caps text-[9px] bg-primary-container/15 text-primary-container px-1 rounded uppercase">Confirmado</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Ayer, 18:42 • Arbitrum</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-numeric-md text-label-numeric-md text-primary-container font-semibold">+1,000.00</span>
+<a class="font-label-numeric-sm text-[10px] text-secondary hover:underline flex items-center gap-0.5" href="https://arbiscan.io" rel="noopener noreferrer" target="_blank">
+<span>Tx: 0x4b...c82</span>
+<span class="material-symbols-outlined text-[10px]">launch</span>
+</a>
+</div>
+</div>
+<!-- Item 3: Confirmed Withdrawal -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">arrow_upward</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-[13px] text-on-surface">Retiro Utilidades</span>
+<span class="font-label-caps text-[9px] bg-surface-container-high text-on-surface px-1 rounded uppercase">Completado</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">12 May, 09:15 • Arbitrum</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-semibold">-500.00</span>
+<a class="font-label-numeric-sm text-[10px] text-secondary hover:underline flex items-center gap-0.5" href="https://arbiscan.io" rel="noopener noreferrer" target="_blank">
+<span>Tx: 0x1d...e98</span>
+<span class="material-symbols-outlined text-[10px]">launch</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro Toast Notification for Tactile Delight -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-surface-container-high text-primary-container px-space-md py-space-xs rounded-full shadow-[0_8px_24px_rgba(0,0,0,0.6)] flex items-center gap-space-xs opacity-0 pointer-events-none transition-all duration-300 transform translate-y-2 z-50" id="copy-toast">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span class="font-headline-md text-[12px] tracking-wide text-on-surface">Dirección Arbitrum copiada al portapapeles</span>
+</div>
+</div>
+<script>
+  (function() {
+    const rawAddress = "0x71C9482F8E1d41872195f269a9e3A28F5c42B49A";
+    const toast = document.getElementById('copy-toast');
+    const btnCopyIcon = document.getElementById('btn-copy-address');
+    const btnCopyDirect = document.getElementById('btn-copy-direct');
+    const btnShareQr = document.getElementById('btn-share-qr');
+    const depositTab = document.getElementById('btn-deposit-tab');
+    const withdrawTab = document.getElementById('btn-withdraw-tab');
+
+    function triggerToast(message) {
+      if (!toast) return;
+      if (message) {
+        const textSpan = toast.querySelector('span:last-child');
+        if (textSpan) textSpan.textContent = message;
+      }
+      toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+      }, 2400);
+    }
+
+    function copyToClipboard() {
+      navigator.clipboard?.writeText(rawAddress).then(() => {
+        triggerToast('Dirección Arbitrum copiada con éxito');
+      }).catch(() => {
+        triggerToast('Dirección copiada (0x71C...B49A)');
+      });
+    }
+
+    if (btnCopyIcon) btnCopyIcon.addEventListener('click', copyToClipboard);
+    if (btnCopyDirect) btnCopyDirect.addEventListener('click', copyToClipboard);
+
+    if (btnShareQr) {
+      btnShareQr.addEventListener('click', () => {
+        if (navigator.share) {
+          navigator.share({
+            title: 'ApexTrade Depósito USDT Arbitrum',
+            text: 'Dirección de depósito USDT en Arbitrum One: ' + rawAddress,
+          }).catch(() => {});
+        } else {
+          triggerToast('Datos del código QR copiados');
+        }
+      });
+    }
+
+    // Interactive Tab Toggle Mockup
+    if (depositTab && withdrawTab) {
+      depositTab.addEventListener('click', () => {
+        depositTab.className = "flex-1 py-space-xs rounded-full bg-surface-container-high text-primary-container font-headline-md text-[13px] tracking-wide flex items-center justify-center gap-space-xs transition-all duration-200 shadow-md";
+        withdrawTab.className = "flex-1 py-space-xs rounded-full text-on-surface-variant hover:text-on-surface font-headline-md text-[13px] tracking-wide flex items-center justify-center gap-space-xs transition-all duration-200";
+      });
+
+      withdrawTab.addEventListener('click', () => {
+        withdrawTab.className = "flex-1 py-space-xs rounded-full bg-surface-container-high text-secondary font-headline-md text-[13px] tracking-wide flex items-center justify-center gap-space-xs transition-all duration-200 shadow-md";
+        depositTab.className = "flex-1 py-space-xs rounded-full text-on-surface-variant hover:text-on-surface font-headline-md text-[13px] tracking-wide flex items-center justify-center gap-space-xs transition-all duration-200";
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.45)]" data-active-classes="text-primary-container bg-surface-container-high/60 shadow-[0_0_12px_rgba(0,245,155,0.15)]"><div class="flex items-stretch justify-around h-16 px-space-xs"><a class="flex-1 flex flex-col items-center justify-center gap-space-2xs min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Dashboard</span></a><a class="flex-1 flex flex-col items-center justify-center gap-space-2xs min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="trade" href="#"><span class="material-symbols-outlined text-[20px]">candlestick_chart</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Trade</span></a><a class="flex-1 flex flex-col items-center justify-center gap-space-2xs min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="bots-ai" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Bots AI</span></a><a class="flex-1 flex flex-col items-center justify-center gap-space-2xs min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="historial" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Historial</span></a></div></nav></body></html>
