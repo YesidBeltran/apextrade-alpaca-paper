@@ -282,6 +282,15 @@
         alert(`Orden de mercado enviada para cerrar ${pair}.`);
       }
     }
+  </script> <!-- REGISTRO SERVICE WORKER -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW no registrado:', err));
+      });
+    }
   </script>
+</body>
+</html>
 </body>
 </html>
